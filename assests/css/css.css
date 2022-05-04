@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav {
+    display: inline-block;
+}
+#nav > li {
+    position: relative;
+    display: inline-block;
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav .subnav{
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    background-color: aqua;
+    top: 100%;
+}
+#nav .subnav a{
+    color: black;
+}
+#nav li:hover > a,
+#nav .subnav li:hover
+{
+    background-color: gray;
+    color: black;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#header .icon-purchase{
+    padding: 0 21px;
+    color: white;
+}
+#header .purchase{
+    float: right;
+    line-height: 46px;
+}
+#header .icon-purchase:hover{
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+}
